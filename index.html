@@ -6,17 +6,44 @@
     <title>Barocco Lucano</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Verdana', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f9f9f9;
             color: #333;
         }
         header {
-            background-color: #8c6239;
+            background-color: #6e4f3a;
             color: white;
             padding: 20px;
             text-align: center;
+            border-bottom: 4px solid #8c6239;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #8c6239;
+            padding: 10px 0;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .menu a:hover {
+            text-decoration: underline;
         }
         .container {
             max-width: 1200px;
@@ -43,7 +70,7 @@
             font-size: 1.1em;
             color: #555;
             margin-bottom: 20px;
-            line-height: 1.6;
+            line-height: 1.8;
         }
         .text-section a {
             color: #8c6239;
@@ -59,6 +86,9 @@
             color: white;
             margin-top: 20px;
         }
+        .icon {
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body>
@@ -66,48 +96,29 @@
         <h1>Barocco Lucano</h1>
         <p>Scopri la bellezza degli affreschi barocchi della Basilicata</p>
     </header>
+    <nav class="menu">
+        <a href="#contatti"><span class="icon">📞</span>Contatti</a>
+        <a href="#come-arrivare"><span class="icon">📍</span>Come arrivare</a>
+        <a href="#offerta-formativa"><span class="icon">📚</span>Offerta formativa</a>
+    </nav>
     <div class="container">
         <div class="image-section">
             <img src="1.png" alt="Affreschi nella Chiesa di San Francesco d’Assisi, Potenza">
         </div>
         <div class="text-section">
-            <p>Gli splendidi affreschi barocchi nella <a href="https://it.wikipedia.org/wiki/Chiesa_di_San_Francesco_d%27Assisi_(Potenza)" target="_blank">Chiesa di San Francesco d’Assisi a Potenza</a> rappresentano scene di grande intensità spirituale e artistica. La chiesa, costruita nel XIII secolo, fu arricchita durante il periodo barocco con decorazioni pittoriche e architettoniche che ne esaltano la spiritualità.</p>
+            <p>Gli splendidi affreschi barocchi nella <a href="https://it.wikipedia.org/wiki/Chiesa_di_San_Francesco_d%27Assisi_(Potenza)" target="_blank">Chiesa di San Francesco d’Assisi a Potenza</a> rappresentano una perfetta fusione tra la spiritualità francescana e l’opulenza del barocco. I dipinti narrano episodi della vita dei santi, utilizzando colori vividi e dettagli ricercati per trasmettere emozione e devozione. La chiesa, costruita nel XIII secolo, è un esempio eccellente di come l’arte possa essere al servizio della fede.</p>
         </div>
         <div class="image-section">
             <img src="2.png" alt="Affreschi nella Chiesa di Santa Maria di Idris, Matera">
         </div>
         <div class="text-section">
-            <p>Gli affreschi della <a href="https://it.wikipedia.org/wiki/Chiesa_di_Santa_Maria_di_Idris" target="_blank">Chiesa di Santa Maria di Idris a Matera</a> uniscono la bellezza barocca al fascino unico della città dei Sassi. Situata su uno sperone roccioso, la chiesa rupestre offre un raro esempio di arte sacra incastonata nel paesaggio naturale, con affreschi che raccontano scene religiose di epoca barocca.</p>
-        </div>
-        <div class="image-section">
-            <img src="3.png" alt="Santuario di Santa Maria di Anglona, Tursi">
-        </div>
-        <div class="text-section">
-            <p>Il <a href="https://it.wikipedia.org/wiki/Santuario_di_Santa_Maria_d%27Anglona" target="_blank">Santuario di Santa Maria di Anglona</a> a Tursi offre una combinazione unica di arte romanica e barocca. Nonostante le sue origini medievali, gli interventi successivi hanno aggiunto elementi barocchi, tra cui decorazioni e affreschi che impreziosiscono l'interno della chiesa.</p>
-        </div>
-        <div class="image-section">
-            <img src="4.png" alt="Cattedrale di San Gerardo, Potenza">
-        </div>
-        <div class="text-section">
-            <p>La <a href="https://it.wikipedia.org/wiki/Cattedrale_di_San_Gerardo" target="_blank">Cattedrale di San Gerardo</a> a Potenza è un altro esempio di influenze barocche in Basilicata. Sebbene costruita originariamente in stile romanico, la cattedrale presenta decorazioni e dettagli barocchi nelle cappelle laterali e negli arredi interni.</p>
-        </div>
-        <div class="image-section">
-            <img src="5.png" alt="Chiesa di San Donato, Ripacandida">
-        </div>
-        <div class="text-section">
-            <p>Conosciuta come la "Cappella Sistina della Basilicata", la <a href="https://it.wikipedia.org/wiki/Chiesa_di_San_Donato_(Ripacandida)" target="_blank">Chiesa di San Donato</a> a Ripacandida ospita straordinari affreschi che raffigurano scene bibliche e di vita dei santi. Le decorazioni barocche aggiungono ulteriore fascino a questo tesoro nascosto della regione.</p>
+            <p>Gli affreschi della <a href="https://it.wikipedia.org/wiki/Chiesa_di_Santa_Maria_di_Idris" target="_blank">Chiesa di Santa Maria di Idris a Matera</a> sono un raro gioiello del patrimonio barocco lucano. Situata nella suggestiva cornice dei Sassi di Matera, la chiesa offre un’esperienza unica in cui la spiritualità incontra il paesaggio. Gli affreschi, datati al XVII secolo, includono rappresentazioni della Vergine e dei santi, decorate con arabeschi e motivi floreali tipici dell’arte barocca.</p>
         </div>
         <div class="image-section">
             <img src="6.png" alt="Dipinto di Giovanni De Gregorio, detto Il Pietrafesa">
         </div>
         <div class="text-section">
-            <p>Giovanni De Gregorio, noto come <a href="https://it.wikipedia.org/wiki/Giovanni_De_Gregorio" target="_blank">Il Pietrafesa</a>, è uno degli artisti più importanti del barocco lucano. Le sue opere, come il "San Michele Arcangelo", sono celebri per l'intensità cromatica e il forte pathos religioso.</p>
-        </div>
-        <div class="image-section">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Altare_Chiesa_San_Francesco.jpg" alt="Altare barocco in Basilicata">
-        </div>
-        <div class="text-section">
-            <p>Le decorazioni barocche presenti negli altari della Basilicata, come quello nella Chiesa di San Francesco, riflettono l'opulenza e la maestria degli artisti locali che hanno interpretato il barocco con un tocco unico e distintivo.</p>
+            <p>Giovanni De Gregorio, noto come <a href="https://it.wikipedia.org/wiki/Giovanni_De_Gregorio" target="_blank">Il Pietrafesa</a>, è una figura chiave del barocco lucano. Le sue opere, come il celebre dipinto "San Michele Arcangelo", si distinguono per la straordinaria qualità tecnica e la profondità emotiva. De Gregorio ha saputo coniugare la tradizione artistica locale con le influenze del barocco romano, creando capolavori che ancora oggi attirano studiosi e appassionati d’arte.</p>
         </div>
     </div>
     <footer>
