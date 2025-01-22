@@ -6,123 +6,143 @@
     <title>Barocco Lucano</title>
     <style>
         body {
-            font-family: 'Verdana', sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: white;
+            color: black;
         }
         header {
-            background-color: #6e4f3a;
-            color: white;
-            padding: 20px;
             text-align: center;
-            border-bottom: 4px solid #8c6239;
+            padding: 20px;
+            border-bottom: 2px solid black;
         }
         header h1 {
-            margin: 0;
             font-size: 2.5em;
+            margin: 0;
         }
-        header p {
-            margin: 5px 0 0;
+        header nav {
+            margin-top: 10px;
+        }
+        header nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
             font-size: 1.2em;
         }
-        .menu {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            background-color: #8c6239;
-            padding: 10px 0;
+        header nav a:hover {
+            text-decoration: underline;
         }
-        .menu a {
-            color: white;
-            text-decoration: none;
-            font-size: 1em;
+        .carousel {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .carousel img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+        }
+        .carousel p {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            border: 1px solid black;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
             display: flex;
             align-items: center;
-            gap: 5px;
-        }
-        .menu a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: grid;
-            grid-template-columns: 1fr 2fr;
             gap: 20px;
+            margin-bottom: 40px;
         }
-        .image-section img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
+        .section img {
+            width: 40%;
+            border: 1px solid black;
         }
-        .text-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .text-section p {
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 20px;
-            line-height: 1.8;
-        }
-        .text-section a {
-            color: #8c6239;
-            text-decoration: none;
-        }
-        .text-section a:hover {
-            text-decoration: underline;
+        .section .text {
+            flex: 1;
+            font-size: 1.2em;
+            line-height: 1.6;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #8c6239;
-            color: white;
-            margin-top: 20px;
-        }
-        .icon {
-            font-size: 1.2em;
+            border-top: 2px solid black;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Barocco Lucano</h1>
-        <p>Scopri la bellezza degli affreschi barocchi della Basilicata</p>
+        <nav>
+            <a href="#visit">Visit</a>
+            <a href="#exhibitions">Exhibitions and events</a>
+            <a href="#artists">Art and artists</a>
+            <a href="#store">Store</a>
+        </nav>
     </header>
-    <nav class="menu">
-        <a href="#contatti"><span class="icon">📞</span>Contatti</a>
-        <a href="#come-arrivare"><span class="icon">📍</span>Come arrivare</a>
-        <a href="#offerta-formativa"><span class="icon">📚</span>Offerta formativa</a>
-    </nav>
-    <div class="container">
-        <div class="image-section">
-            <img src="1.png" alt="Affreschi nella Chiesa di San Francesco d’Assisi, Potenza">
+    
+    <div class="carousel">
+        <img id="carousel-image" src="1.png" alt="Affreschi barocchi">
+        <p onclick="planVisit()">Plan your visit</p>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <img src="2.png" alt="Project: Children and Arts">
+            <div class="text">
+                <h2>Project: Children and Arts</h2>
+                <p>Un progetto dedicato ai bambini per avvicinarli all’arte barocca lucana, attraverso laboratori creativi e visite guidate interattive.</p>
+            </div>
         </div>
-        <div class="text-section">
-            <p>Gli splendidi affreschi barocchi nella <a href="https://it.wikipedia.org/wiki/Chiesa_di_San_Francesco_d%27Assisi_(Potenza)" target="_blank">Chiesa di San Francesco d’Assisi a Potenza</a> rappresentano una perfetta fusione tra la spiritualità francescana e l’opulenza del barocco. I dipinti narrano episodi della vita dei santi, utilizzando colori vividi e dettagli ricercati per trasmettere emozione e devozione. La chiesa, costruita nel XIII secolo, è un esempio eccellente di come l’arte possa essere al servizio della fede.</p>
+
+        <div class="section">
+            <img src="6.png" alt="Exhibit: Giovanni De Gregorio e l'arte barocca lucana">
+            <div class="text">
+                <h2>Exhibit: Giovanni De Gregorio e l'arte barocca lucana</h2>
+                <p>Un’esposizione dedicata a Giovanni De Gregorio, detto Il Pietrafesa, con focus sulle sue opere principali e il suo contributo alla cultura barocca in Basilicata.</p>
+            </div>
         </div>
-        <div class="image-section">
-            <img src="2.png" alt="Affreschi nella Chiesa di Santa Maria di Idris, Matera">
-        </div>
-        <div class="text-section">
-            <p>Gli affreschi della <a href="https://it.wikipedia.org/wiki/Chiesa_di_Santa_Maria_di_Idris" target="_blank">Chiesa di Santa Maria di Idris a Matera</a> sono un raro gioiello del patrimonio barocco lucano. Situata nella suggestiva cornice dei Sassi di Matera, la chiesa offre un’esperienza unica in cui la spiritualità incontra il paesaggio. Gli affreschi, datati al XVII secolo, includono rappresentazioni della Vergine e dei santi, decorate con arabeschi e motivi floreali tipici dell’arte barocca.</p>
-        </div>
-        <div class="image-section">
-            <img src="6.png" alt="Dipinto di Giovanni De Gregorio, detto Il Pietrafesa">
-        </div>
-        <div class="text-section">
-            <p>Giovanni De Gregorio, noto come <a href="https://it.wikipedia.org/wiki/Giovanni_De_Gregorio" target="_blank">Il Pietrafesa</a>, è una figura chiave del barocco lucano. Le sue opere, come il celebre dipinto "San Michele Arcangelo", si distinguono per la straordinaria qualità tecnica e la profondità emotiva. De Gregorio ha saputo coniugare la tradizione artistica locale con le influenze del barocco romano, creando capolavori che ancora oggi attirano studiosi e appassionati d’arte.</p>
+
+        <div class="section">
+            <img src="3.png" alt="Merchandising a piece of Lucania">
+            <div class="text">
+                <h2>Merchandising a piece of Lucania</h2>
+                <p>Porta con te un pezzo della Basilicata: stampe, libri e oggetti ispirati ai capolavori barocchi lucani sono disponibili nel nostro store ufficiale.</p>
+            </div>
         </div>
     </div>
+
     <footer>
         <p>&copy; 2025 Barocco Lucano. Tutti i diritti riservati.</p>
     </footer>
+
+    <script>
+        const images = ["1.png", "4.png", "5.png", "6.png"];
+        let currentIndex = 0;
+
+        function changeImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.getElementById('carousel-image').src = images[currentIndex];
+        }
+
+        setInterval(changeImage, 3000);
+
+        function planVisit() {
+            window.location.href = "#visit";
+        }
+    </script>
 </body>
 </html>
