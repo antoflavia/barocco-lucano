@@ -19,31 +19,37 @@
             text-align: center;
         }
         .container {
-            max-width: 768px;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .image-section {
-            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
         }
         .image-section img {
             width: 100%;
             height: auto;
             border-radius: 8px;
         }
-        .image-caption {
-            font-size: 0.9em;
-            color: #555;
-            margin-top: 8px;
+        .text-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
-        .image-caption a {
+        .text-section p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .text-section a {
             color: #8c6239;
             text-decoration: none;
         }
-        .image-caption a:hover {
+        .text-section a:hover {
             text-decoration: underline;
         }
         footer {
@@ -62,12 +68,16 @@
     </header>
     <div class="container">
         <div class="image-section">
-            <img src="https://fai-platform.imgix.net/uploads/9109a083-e7a1-4777-9020-61bf24341086.jpg" alt="Affreschi nella Chiesa di San Francesco d’Assisi, Potenza">
-            <p class="image-caption">Gli splendidi affreschi barocchi nella <a href="https://it.wikipedia.org/wiki/Chiesa_di_San_Francesco_d%27Assisi_(Potenza)" target="_blank">Chiesa di San Francesco d’Assisi a Potenza</a> rappresentano scene di grande intensità spirituale e artistica. La chiesa, costruita nel XIII secolo, fu arricchita durante il periodo barocco con decorazioni pittoriche e architettoniche che ne esaltano la spiritualità.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/San_Francesco_d%27Assisi_Potenza.jpg" alt="Affreschi nella Chiesa di San Francesco d’Assisi, Potenza">
+        </div>
+        <div class="text-section">
+            <p>Gli splendidi affreschi barocchi nella <a href="https://it.wikipedia.org/wiki/Chiesa_di_San_Francesco_d%27Assisi_(Potenza)" target="_blank">Chiesa di San Francesco d’Assisi a Potenza</a> rappresentano scene di grande intensità spirituale e artistica. La chiesa, costruita nel XIII secolo, fu arricchita durante il periodo barocco con decorazioni pittoriche e architettoniche che ne esaltano la spiritualità.</p>
         </div>
         <div class="image-section">
-            <img src="https://it.wikipedia.org/wiki/Chiesa_di_Santa_Maria_di_Idris#/media/File:Basilicata_Matera6_tango7174.jpg" alt="Affreschi nella Chiesa di Santa Maria di Idris, Matera">
-            <p class="image-caption">Gli affreschi della <a href="https://it.wikipedia.org/wiki/Chiesa_di_Santa_Maria_di_Idris" target="_blank">Chiesa di Santa Maria di Idris a Matera</a> uniscono la bellezza barocca al fascino unico della città dei Sassi. Situata su uno sperone roccioso, la chiesa rupestre offre un raro esempio di arte sacra incastonata nel paesaggio naturale, con affreschi che raccontano scene religiose di epoca barocca.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Chiesa_di_Santa_Maria_di_Idris_Matera.jpg" alt="Affreschi nella Chiesa di Santa Maria di Idris, Matera">
+        </div>
+        <div class="text-section">
+            <p>Gli affreschi della <a href="https://it.wikipedia.org/wiki/Chiesa_di_Santa_Maria_di_Idris" target="_blank">Chiesa di Santa Maria di Idris a Matera</a> uniscono la bellezza barocca al fascino unico della città dei Sassi. Situata su uno sperone roccioso, la chiesa rupestre offre un raro esempio di arte sacra incastonata nel paesaggio naturale, con affreschi che raccontano scene religiose di epoca barocca.</p>
         </div>
     </div>
     <footer>
